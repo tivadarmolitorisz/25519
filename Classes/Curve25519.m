@@ -53,6 +53,20 @@ extern int  curve25519_sign(unsigned char* signature_out, /* 64 bytes */
     return self;
 }
 
++(ECKeyPair*)generateFromPrivateKey:(NSData *)privateKey {
+    ECKeyPair* keyPair =[[ECKeyPair alloc] init];
+
+    memcpy(keyPair->privateKey, [privateKey bytes], 32);
+    keyPair->privateKey[0]  &= 248;
+    keyPair->privateKey[31] &= 127;
+    keyPair->privateKey[31] |= 64;
+    
+    static const uint8_t basepoint[ECCKeyLength] = {9};
+    curve25519_donna(keyPair->publicKey, keyPair->privateKey, basepoint);
+
+    return keyPair;
+}
+
 
 +(ECKeyPair*)generateKeyPair{
     ECKeyPair* keyPair =[[ECKeyPair alloc] init];
@@ -71,6 +85,10 @@ extern int  curve25519_sign(unsigned char* signature_out, /* 64 bytes */
 
 -(NSData*) publicKey {
     return [NSData dataWithBytes:self->publicKey length:32];
+}
+
+-(NSData*) privateKey {
+    return [NSData dataWithBytes:self->privateKey length:32];
 }
 
 -(NSData*) sign:(NSData*)data{
@@ -116,6 +134,11 @@ extern int  curve25519_sign(unsigned char* signature_out, /* 64 bytes */
 +(ECKeyPair*)generateKeyPair{
     return [ECKeyPair generateKeyPair];
 }
+
++(ECKeyPair*)generateFromPrivateKey:(NSData *)privateKey {
+    return [ECKeyPair generateFromPrivateKey:privateKey];
+}
+
 
 +(NSData*)generateSharedSecretFromPublicKey:(NSData *)theirPublicKey andKeyPair:(ECKeyPair *)keyPair{
     return [keyPair generateSharedSecretFromPublicKey:theirPublicKey];

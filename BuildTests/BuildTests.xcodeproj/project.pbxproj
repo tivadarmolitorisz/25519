@@ -7,6 +7,54 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		435884A81FC8790600C9F996 /* Curve25519.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EC0A0A197F55E70070F844 /* Curve25519.m */; };
+		435884A91FC8790900C9F996 /* Ed25519.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EC0B0E197F652A0070F844 /* Ed25519.m */; };
+		435884AA1FC8790C00C9F996 /* Randomness.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EC0A0D197F5B1E0070F844 /* Randomness.m */; };
+		435884AB1FC8795700C9F996 /* fe_0.c in Sources */ = {isa = PBXBuildFile; fileRef = B62C85E719CEEA9D00DCA580 /* fe_0.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		435884AC1FC8795A00C9F996 /* fe_1.c in Sources */ = {isa = PBXBuildFile; fileRef = B62C85E819CEEA9D00DCA580 /* fe_1.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		435884AD1FC8795D00C9F996 /* fe_add.c in Sources */ = {isa = PBXBuildFile; fileRef = B62C85E919CEEA9D00DCA580 /* fe_add.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		435884AE1FC8795F00C9F996 /* fe_cmov.c in Sources */ = {isa = PBXBuildFile; fileRef = B62C85EA19CEEA9D00DCA580 /* fe_cmov.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		435884AF1FC8796200C9F996 /* fe_copy.c in Sources */ = {isa = PBXBuildFile; fileRef = B62C85EB19CEEA9D00DCA580 /* fe_copy.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		435884B01FC8796500C9F996 /* fe_frombytes.c in Sources */ = {isa = PBXBuildFile; fileRef = B62C85EC19CEEA9D00DCA580 /* fe_frombytes.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		435884B11FC8796800C9F996 /* fe_invert.c in Sources */ = {isa = PBXBuildFile; fileRef = B62C85ED19CEEA9D00DCA580 /* fe_invert.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		435884B21FC8796A00C9F996 /* fe_isnegative.c in Sources */ = {isa = PBXBuildFile; fileRef = B62C85EE19CEEA9D00DCA580 /* fe_isnegative.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		435884B31FC8796D00C9F996 /* fe_isnonzero.c in Sources */ = {isa = PBXBuildFile; fileRef = B62C85EF19CEEA9D00DCA580 /* fe_isnonzero.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		435884B41FC8797100C9F996 /* fe_mul.c in Sources */ = {isa = PBXBuildFile; fileRef = B62C85F019CEEA9D00DCA580 /* fe_mul.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		435884B51FC8797400C9F996 /* fe_neg.c in Sources */ = {isa = PBXBuildFile; fileRef = B62C85F119CEEA9D00DCA580 /* fe_neg.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		435884B61FC8797700C9F996 /* fe_pow22523.c in Sources */ = {isa = PBXBuildFile; fileRef = B62C85F219CEEA9D00DCA580 /* fe_pow22523.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		435884B71FC8797C00C9F996 /* fe_sq.c in Sources */ = {isa = PBXBuildFile; fileRef = B62C85F319CEEA9D00DCA580 /* fe_sq.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		435884B81FC8797F00C9F996 /* fe_sq2.c in Sources */ = {isa = PBXBuildFile; fileRef = B62C85F419CEEA9D00DCA580 /* fe_sq2.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		435884B91FC8798200C9F996 /* fe_sub.c in Sources */ = {isa = PBXBuildFile; fileRef = B62C85F519CEEA9D00DCA580 /* fe_sub.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		435884BA1FC8798600C9F996 /* fe_tobytes.c in Sources */ = {isa = PBXBuildFile; fileRef = B62C85F619CEEA9D00DCA580 /* fe_tobytes.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		435884BB1FC8798A00C9F996 /* ge_add.c in Sources */ = {isa = PBXBuildFile; fileRef = B62C85F819CEEA9D00DCA580 /* ge_add.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		435884BC1FC8798E00C9F996 /* ge_double_scalarmult.c in Sources */ = {isa = PBXBuildFile; fileRef = B62C85FA19CEEA9D00DCA580 /* ge_double_scalarmult.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		435884BD1FC8799200C9F996 /* ge_frombytes.c in Sources */ = {isa = PBXBuildFile; fileRef = B62C85FB19CEEA9D00DCA580 /* ge_frombytes.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		435884BE1FC8799500C9F996 /* ge_madd.c in Sources */ = {isa = PBXBuildFile; fileRef = B62C85FC19CEEA9D00DCA580 /* ge_madd.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		435884BF1FC8799800C9F996 /* ge_msub.c in Sources */ = {isa = PBXBuildFile; fileRef = B62C85FE19CEEA9D00DCA580 /* ge_msub.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		435884C01FC8799C00C9F996 /* ge_p1p1_to_p2.c in Sources */ = {isa = PBXBuildFile; fileRef = B62C860019CEEA9D00DCA580 /* ge_p1p1_to_p2.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		435884C11FC879A000C9F996 /* ge_p1p1_to_p3.c in Sources */ = {isa = PBXBuildFile; fileRef = B62C860119CEEA9D00DCA580 /* ge_p1p1_to_p3.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		435884C21FC879A200C9F996 /* ge_p2_0.c in Sources */ = {isa = PBXBuildFile; fileRef = B62C860219CEEA9D00DCA580 /* ge_p2_0.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		435884C31FC879A500C9F996 /* ge_p2_dbl.c in Sources */ = {isa = PBXBuildFile; fileRef = B62C860319CEEA9D00DCA580 /* ge_p2_dbl.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		435884C41FC879A800C9F996 /* ge_p3_0.c in Sources */ = {isa = PBXBuildFile; fileRef = B62C860519CEEA9D00DCA580 /* ge_p3_0.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		435884C51FC879AC00C9F996 /* ge_p3_dbl.c in Sources */ = {isa = PBXBuildFile; fileRef = B62C860619CEEA9D00DCA580 /* ge_p3_dbl.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		435884C61FC879B000C9F996 /* ge_p3_to_cached.c in Sources */ = {isa = PBXBuildFile; fileRef = B62C860719CEEA9D00DCA580 /* ge_p3_to_cached.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		435884C71FC879B300C9F996 /* ge_p3_to_p2.c in Sources */ = {isa = PBXBuildFile; fileRef = B62C860819CEEA9D00DCA580 /* ge_p3_to_p2.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		435884C81FC879B500C9F996 /* ge_p3_tobytes.c in Sources */ = {isa = PBXBuildFile; fileRef = B62C860919CEEA9D00DCA580 /* ge_p3_tobytes.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		435884C91FC879B900C9F996 /* ge_precomp_0.c in Sources */ = {isa = PBXBuildFile; fileRef = B62C860A19CEEA9D00DCA580 /* ge_precomp_0.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		435884CA1FC879BC00C9F996 /* ge_scalarmult_base.c in Sources */ = {isa = PBXBuildFile; fileRef = B62C860B19CEEA9D00DCA580 /* ge_scalarmult_base.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		435884CB1FC879BF00C9F996 /* ge_sub.c in Sources */ = {isa = PBXBuildFile; fileRef = B62C860C19CEEA9D00DCA580 /* ge_sub.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		435884CC1FC879C500C9F996 /* ge_tobytes.c in Sources */ = {isa = PBXBuildFile; fileRef = B62C860E19CEEA9D00DCA580 /* ge_tobytes.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		435884CD1FC879CA00C9F996 /* open.c in Sources */ = {isa = PBXBuildFile; fileRef = B62C861C19CEEA9D00DCA580 /* open.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		435884CE1FC879CE00C9F996 /* sc_muladd.c in Sources */ = {isa = PBXBuildFile; fileRef = B62C862019CEEA9D00DCA580 /* sc_muladd.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		435884CF1FC879D100C9F996 /* sc_reduce.c in Sources */ = {isa = PBXBuildFile; fileRef = B62C862119CEEA9D00DCA580 /* sc_reduce.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		435884D01FC879D500C9F996 /* sign.c in Sources */ = {isa = PBXBuildFile; fileRef = B62C862819CEEA9D00DCA580 /* sign.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		435884D11FC879E400C9F996 /* blocks.c in Sources */ = {isa = PBXBuildFile; fileRef = B62C861A19CEEA9D00DCA580 /* blocks.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		435884D21FC879E700C9F996 /* hash.c in Sources */ = {isa = PBXBuildFile; fileRef = B62C861B19CEEA9D00DCA580 /* hash.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		435884D31FC879F100C9F996 /* compare.c in Sources */ = {isa = PBXBuildFile; fileRef = B62C85D919CEEA9D00DCA580 /* compare.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		435884D41FC879F400C9F996 /* curve_sigs.c in Sources */ = {isa = PBXBuildFile; fileRef = B62C85DC19CEEA9D00DCA580 /* curve_sigs.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		435884D51FC879F700C9F996 /* sign_modified.c in Sources */ = {isa = PBXBuildFile; fileRef = B62C85DE19CEEA9D00DCA580 /* sign_modified.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		435884D61FC879FA00C9F996 /* zeroize.c in Sources */ = {isa = PBXBuildFile; fileRef = B62C85DF19CEEA9D00DCA580 /* zeroize.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		435884D71FC87A5600C9F996 /* curve25519-donna.c in Sources */ = {isa = PBXBuildFile; fileRef = B6EC0989197F55B90070F844 /* curve25519-donna.c */; settings = {COMPILER_FLAGS = "-w"; }; };
 		B62C862A19CEEA9D00DCA580 /* compare.c in Sources */ = {isa = PBXBuildFile; fileRef = B62C85D919CEEA9D00DCA580 /* compare.c */; settings = {COMPILER_FLAGS = "-w"; }; };
 		B62C862B19CEEA9D00DCA580 /* curve_sigs.c in Sources */ = {isa = PBXBuildFile; fileRef = B62C85DC19CEEA9D00DCA580 /* curve_sigs.c */; settings = {COMPILER_FLAGS = "-w"; }; };
 		B62C862C19CEEA9D00DCA580 /* sign_modified.c in Sources */ = {isa = PBXBuildFile; fileRef = B62C85DE19CEEA9D00DCA580 /* sign_modified.c */; settings = {COMPILER_FLAGS = "-w"; }; };
@@ -469,13 +517,8 @@
 		B6EC094E197F559E0070F844 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "Open Whisper Systems";
-				TargetAttributes = {
-					B6EC0970197F559E0070F844 = {
-						TestTargetID = B6EC0955197F559E0070F844;
-					};
-				};
 			};
 			buildConfigurationList = B6EC0951197F559E0070F844 /* Build configuration list for PBXProject "BuildTests" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -578,7 +621,55 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				435884D31FC879F100C9F996 /* compare.c in Sources */,
+				435884CD1FC879CA00C9F996 /* open.c in Sources */,
+				435884B51FC8797400C9F996 /* fe_neg.c in Sources */,
+				435884AD1FC8795D00C9F996 /* fe_add.c in Sources */,
+				435884AE1FC8795F00C9F996 /* fe_cmov.c in Sources */,
+				435884AC1FC8795A00C9F996 /* fe_1.c in Sources */,
+				435884D11FC879E400C9F996 /* blocks.c in Sources */,
+				435884AF1FC8796200C9F996 /* fe_copy.c in Sources */,
+				435884B91FC8798200C9F996 /* fe_sub.c in Sources */,
+				435884CB1FC879BF00C9F996 /* ge_sub.c in Sources */,
+				435884CE1FC879CE00C9F996 /* sc_muladd.c in Sources */,
+				435884B31FC8796D00C9F996 /* fe_isnonzero.c in Sources */,
+				435884B01FC8796500C9F996 /* fe_frombytes.c in Sources */,
+				435884C01FC8799C00C9F996 /* ge_p1p1_to_p2.c in Sources */,
+				435884C61FC879B000C9F996 /* ge_p3_to_cached.c in Sources */,
+				435884BF1FC8799800C9F996 /* ge_msub.c in Sources */,
+				435884B21FC8796A00C9F996 /* fe_isnegative.c in Sources */,
+				435884BA1FC8798600C9F996 /* fe_tobytes.c in Sources */,
+				435884B11FC8796800C9F996 /* fe_invert.c in Sources */,
+				435884C41FC879A800C9F996 /* ge_p3_0.c in Sources */,
+				435884D21FC879E700C9F996 /* hash.c in Sources */,
+				435884C31FC879A500C9F996 /* ge_p2_dbl.c in Sources */,
+				435884D51FC879F700C9F996 /* sign_modified.c in Sources */,
+				435884AB1FC8795700C9F996 /* fe_0.c in Sources */,
+				435884D41FC879F400C9F996 /* curve_sigs.c in Sources */,
+				435884BC1FC8798E00C9F996 /* ge_double_scalarmult.c in Sources */,
+				435884A91FC8790900C9F996 /* Ed25519.m in Sources */,
+				435884D01FC879D500C9F996 /* sign.c in Sources */,
+				435884AA1FC8790C00C9F996 /* Randomness.m in Sources */,
+				435884B61FC8797700C9F996 /* fe_pow22523.c in Sources */,
+				435884B41FC8797100C9F996 /* fe_mul.c in Sources */,
+				435884BD1FC8799200C9F996 /* ge_frombytes.c in Sources */,
+				435884B71FC8797C00C9F996 /* fe_sq.c in Sources */,
+				435884C11FC879A000C9F996 /* ge_p1p1_to_p3.c in Sources */,
+				435884D61FC879FA00C9F996 /* zeroize.c in Sources */,
+				435884C21FC879A200C9F996 /* ge_p2_0.c in Sources */,
+				435884D71FC87A5600C9F996 /* curve25519-donna.c in Sources */,
+				435884BE1FC8799500C9F996 /* ge_madd.c in Sources */,
+				435884BB1FC8798A00C9F996 /* ge_add.c in Sources */,
+				435884A81FC8790600C9F996 /* Curve25519.m in Sources */,
+				435884C91FC879B900C9F996 /* ge_precomp_0.c in Sources */,
+				435884C81FC879B500C9F996 /* ge_p3_tobytes.c in Sources */,
 				B65F5A1219823F45004D21C8 /* SigningTests.m in Sources */,
+				435884C71FC879B300C9F996 /* ge_p3_to_p2.c in Sources */,
+				435884CF1FC879D100C9F996 /* sc_reduce.c in Sources */,
+				435884C51FC879AC00C9F996 /* ge_p3_dbl.c in Sources */,
+				435884CA1FC879BC00C9F996 /* ge_scalarmult_base.c in Sources */,
+				435884CC1FC879C500C9F996 /* ge_tobytes.c in Sources */,
+				435884B81FC8797F00C9F996 /* fe_sq2.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -620,18 +711,30 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -644,7 +747,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = (
 					"-Ied25519/sha512",
@@ -664,25 +767,36 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_CFLAGS = (
 					"-Ied25519/sha512",
 					"-Ied25519",
@@ -702,6 +816,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BuildTests/BuildTests-Prefix.pch";
 				INFOPLIST_FILE = "BuildTests/BuildTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fredericjacobs.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -715,6 +830,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BuildTests/BuildTests-Prefix.pch";
 				INFOPLIST_FILE = "BuildTests/BuildTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fredericjacobs.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -723,7 +839,6 @@
 		B6EC0986197F559E0070F844 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BuildTests.app/BuildTests";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -736,8 +851,8 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "BuildTestsTests/BuildTestsTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fredericjacobs.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -745,7 +860,6 @@
 		B6EC0987197F559E0070F844 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BuildTests.app/BuildTests";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -754,8 +868,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BuildTests/BuildTests-Prefix.pch";
 				INFOPLIST_FILE = "BuildTestsTests/BuildTestsTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fredericjacobs.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;

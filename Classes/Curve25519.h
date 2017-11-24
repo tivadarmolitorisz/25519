@@ -16,6 +16,7 @@
 }
 
 -(NSData*) publicKey;
+-(NSData*) privateKey;
 
 @end
 
@@ -39,5 +40,6 @@
  */
 
 + (ECKeyPair*)generateKeyPair;
++ (ECKeyPair*)generateFromPrivateKey:(NSData *)privateKey;
 
 @end
